@@ -1,0 +1,36 @@
+@keyframes play30 {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -300px 0px;
+  }
+}
+
+@keyframes rplay30 {
+  0% {
+    background-position: -300px 0px;
+  }
+
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+.shapeshifter {
+  animation-duration: 500ms;
+  animation-timing-function: steps(30);
+  width: 10px;
+  height: 10px;
+  animation-fill-mode: forwards;
+  background-repeat: no-repeat;
+}
+
+.shapeshifter.play {
+  animation-name: play30;
+}
+
+.shapeshifter.rplay {
+  animation-name: rplay30;
+}

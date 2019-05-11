@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" x='0px' y='0px' width='10px' height='10px' viewBox="0 0 5 5">
+    <defs>
+        <style>.cls-1{fill:#fff;}</style>
+    </defs>
+    <title>plus</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" d="M4.64,2H3V.36A.36.36,0,0,0,2.68,0H2.32A.36.36,0,0,0,2,.36V2H.36A.36.36,0,0,0,0,2.32v.36A.36.36,0,0,0,.36,3H2v1.6A.36.36,0,0,0,2.32,5h.36A.36.36,0,0,0,3,4.64V3h1.6A.36.36,0,0,0,5,2.68V2.32A.36.36,0,0,0,4.64,2Z"/>
+        </g>
+    </g>
+</svg>
