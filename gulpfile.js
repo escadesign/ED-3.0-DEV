@@ -5,6 +5,14 @@ var sass = require("gulp-sass");
 var browserSync = require("browser-sync").create();
 let cleanCSS = require("gulp-clean-css");
 var minify = require("gulp-minify");
+var concat = require("gulp-concat");
+
+gulp.task("scripts", function() {
+  return gulp
+    .src("./dev/plugins/*.js")
+    .pipe(concat("app.js"))
+    .pipe(gulp.dest("./dev"));
+});
 
 gulp.task("serve", ["sass"], function() {
   browserSync.init({
@@ -38,7 +46,14 @@ gulp.task("sass:watch", function() {
   gulp.watch("./assets/sass/*.+(scss|sass)", ["sass"]);
 });
 
-gulp.task("default", ["sass", "sass:watch", "compress", "serve", "minify-css"]);
+gulp.task("default", [
+  "sass",
+  "sass:watch",
+  "scripts",
+  "compress",
+  "minify-css",
+  "serve"
+]);
 
 gulp.task("compress", function() {
   gulp
