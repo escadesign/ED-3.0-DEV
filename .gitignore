@@ -75,9 +75,8 @@ typings/
 # FuseBox cache
 .fusebox/
 
-# Frameworks
 frameworks/
-
-# Pinegrow
 pinegrow/
-BACKUP
+BACKUP/
+scriptbundle/
+*.DS_Store
