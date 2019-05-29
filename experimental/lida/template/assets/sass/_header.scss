@@ -1,0 +1,187 @@
+/* -------------------------------------------------------
+                   Header Page
+-------------------------------------------------------- */
+.dsn-header-hero {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+
+  .hero-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: -webkit-linear-gradient(to top, #000000e3 15%, transparent 100%);
+      background-image: -o-linear-gradient(to top, #000000e3 15%, transparent 100%);
+      background-image: linear-gradient(to top, #000000e3 15%, transparent 100%);
+    }
+
+  }
+
+  .name-title, .subtitle {
+    opacity: 0;
+    visibility: hidden;
+    @include transform(translateY(50px));
+    @include transition(all .5s ease-out);
+  }
+
+  .name-title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: auto;
+    transition-delay: 0.2s;
+
+    &:before {
+      content: '';
+      width: 3vw;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.15);
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:after {
+      content: '';
+      width: 3vw;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.15);
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    h1 {
+      position: relative;
+      padding: 15px 30px;
+      font-size: 5vw;
+      text-transform: uppercase;
+      color: #fff;
+      max-width: 100vw;
+      overflow: hidden;
+      text-align: center;
+
+      &:before {
+        content: '';
+        right: 0;
+        top: 50%;
+        width: 2px;
+        height: 3.7vh;
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        background: rgba(255, 255, 255, 0.15);
+        position: absolute;
+      }
+
+      &:after {
+        content: '';
+        left: 0;
+        top: 50%;
+        width: 2px;
+        height: 3.7vh;
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        background: rgba(255, 255, 255, 0.15);
+        position: absolute;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #fff;
+    @include transform(translateY(70px));
+  }
+
+  .hero__down {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: inherit;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 2em;
+    height: 2em;
+    margin-left: -1em;
+    margin-top: -1em;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em);
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.25em;
+    color: #666;
+    cursor: pointer;
+    transition: opacity 3000ms cubic-bezier(0, 1, 0.15, 1), transform 5000ms cubic-bezier(0, 1, 0.15, 1), color 200ms ease-out, -webkit-transform 5000ms cubic-bezier(0, 1, 0.15, 1);
+    transform: translateY(25vh) translateZ(120px);
+    opacity: 1;
+    z-index: 1;
+
+    &:hover {
+      color: #fff;
+    }
+
+    svg {
+      fill: currentColor;
+      position: absolute;
+      width: 1em;
+      margin-left: -0.5em;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.dsn-header-height {
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+}
+
+.content-background, .page-content {
+  margin-top: 2px;
+
+}
+
+
+main.root.dsn-animate {
+
+  .subtitle, .name-title {
+    opacity: 1;
+    visibility: visible;
+    @include transform(translateY(0));
+  }
+
+  .content-background, .page-content {
+    transition-delay: 1s;
+    margin-top: -80px;
+    @include transition(margin-top 1s ease-in-out 1s)
+  }
+
+
+}
