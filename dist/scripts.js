@@ -295,19 +295,7 @@ Function First Load
 		});
 		
 		//Load Project from Showcase Carousel
-		$('#showcase-carousel-slider a.title').on('click', function() {
-			$( "#ball" ).removeClass("hold");	
-			TweenMax.to($("#showcase-carousel-slider .section-image"), 0.7, {force3D:true, scale:1.05, maxWidth: '100%', height:"100%", top:0, delay:0, ease:Power2.easeInOut});
-			TweenMax.to($("#showcase-carousel-slider .img-mask"), 0.7, {force3D:true, padding:0, delay:0, ease:Power2.easeInOut});
-			TweenMax.to($("#showcase-carousel-slider .title span"), 0.4, {force3D:true, opacity:0, delay:0, ease:Power2.easeOut});
-			TweenMax.to($(".arrows-wrap"), 0.2, {force3D:true, opacity:0, delay:0, ease:Power2.easeOut});
-			TweenMax.to($(".footer-middle"), 0.2, {force3D:true, opacity:0, delay:0.1, ease:Power2.easeOut});
-			TweenMax.to($(".socials-wrap"), 0.2, {force3D:true, opacity:0, delay:0.15, ease:Power2.easeOut});
-			TweenMax.to('#ball', 0.3,{borderWidth: '2px', delay:0.3, scale:1, opacity:1});
-			$("body").addClass("load-project-page-carousel").addClass("show-loader");
-		});
-		
-		
+
 		//Load Page From Menu
 		$('nav .ajax-link').on('click', function() {
 			var tl = new TimelineLite();
@@ -1490,9 +1478,7 @@ Function Showcase Carousel
 				$("#ball").removeClass("with-icon");
 			});	
 			
-			$('#showcase-carousel-slider .title').on('mousedown', function(event) {
-				return false;
-			});
+
 			
 			$(".section-image").mouseenter(function(e) {					
 				$( "#ball" ).addClass("hold")
