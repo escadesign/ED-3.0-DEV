@@ -51,7 +51,7 @@
     "ruby": "^0.6.1",
     "sal.js": "^0.5.0",
     "svg-mesh-3d": "git+https://github.com/mattdesl/svg-mesh-3d.git",
-    "three": "^0.104.0",
+    "three": "^0.125.0",
     "three.js": "^0.77.1",
     "uglify-js": "^3.5.11",
     "yarn": "^1.15.2"
