@@ -35,7 +35,7 @@
     "gulp-prettier": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.15.2",
     "pump": "^3.0.0",
     "sass": "^1.15.1"
@@ -43,7 +43,7 @@
   "dependencies": {
     "gulp-sass": "^4.0.2",
     "maptalks.three": "^0.6.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "node-sass-cli": "0.0.4",
     "pipeline": "^0.1.3",
     "postprocessing": "^6.3.3",
